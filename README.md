@@ -3,6 +3,6 @@ Welcome to the Limiting Factor repository, here this is the official playground 
 
 ## Facts About Us
 - We are a fictional company founded for a Digital Info Tech class
-- Founded by Eli G. and myself (Jose M.)
+- Founded by Eli G, Farhan R, and myself (Jose M)
 
 We hope you enjoy going through this repository and its several projects found within
