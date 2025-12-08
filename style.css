@@ -86,7 +86,7 @@ html {
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
 }
-.off-screen-menu ul li:hover a {
+.off-screen-menu ul li:hover {
   color: #171616;
   /* Optionally remove underline on hover */
   text-decoration: none;
