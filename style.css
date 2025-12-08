@@ -79,6 +79,19 @@ html {
   text-align: center;
 }
 
+/* Add UL LI hover effect for .off-screen-menu */
+.off-screen-menu ul li:hover {
+  background-color: #EDC068;
+  color: #171616;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+.off-screen-menu ul li:hover a {
+  color: #171616;
+  /* Optionally remove underline on hover */
+  text-decoration: none;
+}
+
 
 /* Nav Menu */
 .topbar {
