@@ -8,7 +8,7 @@ html {
 
 .lf-logo {
   position: relative;
-  top: 20px;
+  top: 40px;
 }
 
 .button-link {
@@ -79,7 +79,7 @@ html {
 
   .nav:hover div{
   width: 100%;}
-  
+
   .nav.active {
     rotate: 45deg;
     div {
