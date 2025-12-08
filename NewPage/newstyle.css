@@ -1,0 +1,22 @@
+/* Welcome to CSS! */
+
+html {
+    scroll-behavior: smooth;
+    background-image: linear-gradient(to bottom, #ffffff, #000000);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    text-align: center;
+}
+
+.hlimiting1 {
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+.hlimiting2 {
+    margin-top: 0px;
+    font-size: 2em;
+}
