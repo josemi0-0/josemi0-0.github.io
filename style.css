@@ -78,6 +78,9 @@ html {
   width: 100%;
   text-align: center;
 }
+.off-screen-menu ul:hover {
+  color: #EDC068; 
+}
 
 /* Nav Menu */
 .topbar {
