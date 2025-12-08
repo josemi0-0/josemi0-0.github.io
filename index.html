@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
     <title> Limiting Factor </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <!-- Header - Limiting Factor logo and Menu -->
@@ -17,8 +18,8 @@
     <div class="one"></div>
     <div class="two"></div>
     <div class="three"></div>
-    </div>
   </a>
+
   <!-- Header Section -->
 </div>
 <br/>
@@ -73,7 +74,16 @@
         <footer id="footer">
           <br />
           <hr />
-          <h3 style="text-align: center;"> <strong> &copy; 2025 Limiting Factor&#8482; </strong> <br/><br/>
-          <a href="#header" class="button-link" style="margin-top: 10px"> Back to Top </a> </h4>
+          <h5 style="text-align: center;"> <strong> &copy; 2025 Limiting Factor&#8482; </strong> <br/><br/><br/>
+          <a href="#header" class="button-link" style="margin-top: 10px"> Back to Top </a> </h5>
         </footer>
+<script>
+  const navMenu = document.querySelector('.nav');
+  if (navMenu) {
+    navMenu.addEventListener('click', function(e) {
+      e.preventDefault();
+      navMenu.classList.toggle('active');
+    });
+  }
+</script>
 </html>
