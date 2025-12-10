@@ -7,8 +7,42 @@
         <title>Limiting Factor</title>
         <link rel="icon" href="https://github.com/josemi0-0/josemi0-0.github.io/blob/main/assets/j8h91A9.png?raw=true" type="image/x-icon">
         <link rel="stylesheet" href="newstyle.css">
+        <link rel="scriptsheet" href="newscript.js">
     </head>
 
-    <body>
+    <body> 
+<nav>
+<!-- Light Switch-->
+ 
+        <label for="switch" class="switch"></label>
+        <input type="checkbox" id="dl-switch">
+        <span class="slider-dl"></span>
+
+        <script>
+
+            const switchDLButton = document.getElementById("dl-switch")
+
+            switchDLButton.addEventListener("change", (e) => {
+                if (e.target.checked) {
+                    document.body.classList.add("dark-mode")
+                }   else {
+                    document.body.classList.remove("dark-mode")
+                }
+            });
+
+        </script>
+
+<!-- Content Start -->
+
+    <div class="hero"> 
+        <div class="title">
+            <l>&nbsp</l>
+            <h1 class="resize"> Limiting Factor</h1>
+            <h3> Where <u> You</u> Set Your Own Limits </h3>
+
+            <p> Created in 2025; Limiting Factor is a fictional company, founded by students, and ran by students.</p>
+        </div>
+        
     </body>
+
 </html>
