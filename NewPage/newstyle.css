@@ -1,14 +1,15 @@
 /* Welcome to CSS! */
 
 :root {
-  --background: #f8f5ec;
-  --background-op: #212121;
+  --background: #212121;
   --ac1: #3b6064;
-  --ac2: #03b5aa;
-  --ac3: #9f2042;
-  --ac-cont: #3b6064;
-  --contrast-text: #000000;
+  --ac2: #9f2042;
+  --contrast-text: #ffffff;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Bitcount+Prop+Single:wght@100..900&family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Bitcount+Prop+Single:wght@100..900&family=Fredoka:wght@300..700&display=swap');
+
 
 html {
   scroll-behavior: smooth;
@@ -23,14 +24,14 @@ body {
   transition: 0.3s;
 }
 
-body.dark-mode {
+/* body.dark-mode {
   --background: #212121;
   --background-op: #f8f5ec;
   --ac-cont: #03b5aa;
   --contrast-text: #ffffff;
   --h1: bold max(36px, 4vw) / max(48px, 5vw) var(--ff);
   --ff: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+} */
 
 nav {
   transition: 0.3s;
@@ -40,20 +41,35 @@ nav {
   height: 3vh;
   border-bottom: var(--ac1) solid 5px;
 }
-h1.resize {
-  font-size: 5vw;
+
+
+h1, h2, h3 {
+  font-family: "BBH Hegartly", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: 0.3s;
 }
-.hero {
+
+@media screen and (min-width: 768px) {
+  h1 { font-size: 3em; }
+  h2 { font-size: 2em; }
+  h3 { font-size: 1.5em;}
+  p { font-size: 1.2em;}
+  }
+
+
+.hero, .hero-image {
   display: flex;
   margin: 2em 0 0 0;
   color: var(--contrast-text);
 }
 
-.hero .title {
+.hero {
   width: 50vw;
 }
 
-.hero h1,h3 {
+
+h1,h2,h3 {
   margin: 0;
 }
 
