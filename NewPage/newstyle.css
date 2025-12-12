@@ -1,10 +1,13 @@
 /* Welcome to CSS! */
 
 :root {
-  --background: #212121;
+  --background: #151515;
+  --background-a1: #171717; 
+  --background-a2: #232323;
   --ac1: #3b6064;
-  --ac2: #9f2042;
-  --contrast-text: #ffffff;
+  --ac2: #7EA8BE;
+  --textl: #ffffff;
+  --textd: #000000;
 }
 
 /* Custom Fonts */
@@ -23,13 +26,13 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
   background: var(--background);
 }
 
 body {
   margin: 0;
-  min-height: 100vh;
-  width: 100vw;
+  height: 200vh;
   display: flex;
   background: var(--background);
   transition: 0.3s;
@@ -47,11 +50,11 @@ body {
 
 nav {
   transition: 0.3s;
-  background: #161616;
+  background: var(--background-a1);
   padding: 1rem 0 1em 0;
   width: 100vw;
   height: 3vh;
-  border-bottom: #363636 solid 5px;
+  border-bottom: var(--background-a2) solid 5px;
 }
 
 .switch {
@@ -61,7 +64,6 @@ nav {
 
 h1, h2, h3 {
   font-family: "Bitcount";
-  letter-spacing: px;
   transition: 0.3s;
 }
 
@@ -71,19 +73,18 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .hero h1 { font-size: 5em; }
-  .hero h2 { font-size: 3em; }
-  .hero h3 { font-size: 2.5em;}
-  .hero p { font-size: 1.2em;}
-  .hero .border p { padding: 0.75em;}
-  }
+  h1 { font-size: 5em;  letter-spacing: 20px; }
+  h2 { font-size: 3em; }
+  h3 { font-size: 2.5em; letter-spacing: 1px;}
+  p { font-size: 1.2em;}
+  .border p { padding: 0.75em;}}
 
 @media screen and (max-width: 768px) {
-  .hero h1 { font-size: 2em; }
-  .hero h2 { font-size: 1.75em; }
-  .hero h3 { font-size: 1.5em;}
-  .hero p { font-size: 0.8em;}
-  .hero .border p { padding: 0.7em;}
+  h1 { font-size: 2em; letter-spacing: 10px;}
+  h2 { font-size: 1.75em; }
+  h3 { font-size: 1.5em; letter-spacing: 0.5px;}
+  p { font-size: 0.8em;}
+  .border p { padding: 0.7em;}
   }
 
 h1,h2,h3 {
@@ -96,8 +97,17 @@ h1,h2,h3 {
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 2em 0 0 2em;
-  color: var(--contrast-text);
+  margin: 1.25em 0 0 0;
+  color: var(--textl);
+  background-image: url('../assets/main/backgroundmountain.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero .title {
+  padding: 2em 0 2em 0;
 }
 
 .hero .border {
@@ -110,7 +120,54 @@ h1,h2,h3 {
   margin: 1.5em 0 1.5em 0;
 }
 
-.hero .border p{
+.hero .border p {
   background: var(--background);
   border: var(--ac2) solid 3px;
+}
+
+.hero .links {
+  margin: 2em 0 0.5em 0;
+  height: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: var(--ac2) solid 3px;
+  background-color: var(--background);
+}
+
+.hero .links .b {
+  font-family: 'Bitcount';
+  background-color: var(--ac2);
+  border: var(--background) solid 3px;
+  padding: 0.5em;
+  margin: 0.5em;
+  transition: 0.3s;
+}
+
+.hero .links .b:hover {
+  background-color: var(--background);
+  border: var(--ac2) solid 3px;
+}
+
+.hero .links .b a {
+  text-decoration: none;
+  color: var(--textl);
+  transition: 0.3s;
+}
+
+.hero .links .b a:hover {
+  color: var(--ac2);
+}
+
+.abt-us {
+  color: var(--textl);
+}
+
+.abt-us h1 {
+  letter-spacing: 2px;
+  margin: 1em 0 0.5em 0;
+}
+
+.abt-us p {
+  font-size: 1em;
 }
