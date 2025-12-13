@@ -43,13 +43,12 @@ html {
 
 body {
   margin: 0;
-  height: 200vh;
+  height: 100%;
   background: var(--background);
   transition: 0.3s;
 }
 
 .hide-scrollbar {
-  -ms-text-overflow: none;
   scrollbar-width: none;
 }
 
@@ -124,28 +123,26 @@ nav {
 .off-screen-menu .items-list-ham {
   list-style: none;
   padding: 2em;
-  font-family: 'Kanit';
   margin: 2em 0 0 0;
 }
 
 .off-screen-menu .items-list-ham li {
   margin: 5px 0 0;
   font-size: 1.2em;
-  transition: 0.3s;
+  transition: 0.1s;
   a {
   color: var(--textl); 
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 }
 
 .off-screen-menu .items-list-ham li:hover {
-  transition-delay: 0.1s;
   border: var(--ac2) solid 2px;
+  border-radius: 5px;
   padding: 1px 0.5em 1px 0.5em;
   a{
     font-weight: bold;
-    transition-delay: 0.3s;
     color: #7EA8BE;
   }
 }
@@ -159,10 +156,11 @@ nav {
 
 h1, h2, h3 {
   font-family: "Bitcount";
+  letter-spacing: 1px;
   transition: 0.3s;
 }
 
-p {
+p, li {
   font-family: "Kanit";
   transition: 0.1s;
 }
@@ -174,6 +172,7 @@ p {
   p { font-size: 1.2em;}
   .border p { padding: 0.75em;}
   nav li a { font-size: 1.5em; }
+  .abt-us li { font-size: 1.3em; }
 }
  
 
@@ -185,6 +184,7 @@ p {
   p { font-size: 0.8em;}
   .border p { padding: 0.7em;}
   nav li a { font-size: 1.1em;}
+  .abt-us li { font-size: 1em; }
   }
 
 h1,h2,h3 {
@@ -207,11 +207,6 @@ h1,h2,h3 {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-
-
-
-
 
 
 /* Hero */
@@ -290,7 +285,7 @@ h1,h2,h3 {
   margin: 0 1em 0 1em;
 }
 
-.abt-us h1 {
+.abt-us h1, .abt-us h2 {
   letter-spacing: 2px;
   margin: 1em 0 0.5em 0;
 }
@@ -310,6 +305,5 @@ h1,h2,h3 {
 }
 
 .abt-us-header {
-  font-family: 'Bitcount';
   background-color: var(--background);
 }
