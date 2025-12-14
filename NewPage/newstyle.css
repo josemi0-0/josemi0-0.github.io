@@ -9,6 +9,7 @@
   --textl: #ffffff;
   --textd: #000000;
   --text: #ffffff;
+  --background-a1-semi: rgba(23, 23, 23, 0.75);
 }
 
 
@@ -115,7 +116,7 @@ nav {
   text-align: center;
   width: 265px;
   height: 100vh;
-  background-color: var(--background-a1);
+  background-color: var(--background-a1-semi);
   transition: 0.3s ease;
   border-right: var(--background-a2) solid 5px;
 }
@@ -136,6 +137,7 @@ nav {
   transition: 0.1s;
 }
 }
+
 
 .off-screen-menu .items-list-ham li:hover {
   border: var(--ac2) solid 2px;
@@ -172,7 +174,7 @@ p, li {
   p { font-size: 1.2em;}
   .border p { padding: 0.75em;}
   nav li a { font-size: 1.5em; }
-  .abt-us li { font-size: 1.3em; }
+  .abt-us li, p { font-size: 1.3em; }
 }
  
 
@@ -184,7 +186,7 @@ p, li {
   p { font-size: 0.8em;}
   .border p { padding: 0.7em;}
   nav li a { font-size: 1.1em;}
-  .abt-us li { font-size: 1em; }
+  .abt-us li, p { font-size: 1em; }
   }
 
 h1,h2,h3 {
@@ -280,6 +282,8 @@ h1,h2,h3 {
 /* About us */
 
 .abt-us {
+  justify-content: center;
+  align-items: center;
   color: var(--textl);
   margin: 0 1em 0 1em;
 }
@@ -289,12 +293,8 @@ h1,h2,h3 {
   margin: 1em 0 0.5em 0;
 }
 
-.abt-us p {
-  font-size: 1em;
-}
-
 .abt-us-contain {
-  margin: 2em 0 2em 0;
+  margin: 0 0 0 0;
   padding: 0 0 2em 0;
   height: 4em;
   display: flex;
@@ -303,6 +303,24 @@ h1,h2,h3 {
   border: var(--ac2) solid 3px;
 }
 
+.abt-us-left {
+  border: red solid 2px;
+  width: 60%;
+}
+
+.abt-us-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em 0 1em;
+  border: blue solid 2px;
+  width: 40%;
+}
+
+.abt-us-right img {
+  width: 75%;
+}
 .abt-us-header {
   background-color: var(--background);
+  transition: 0.3s;
 }
