@@ -175,6 +175,11 @@ p, li {
   .border p { padding: 0.75em;}
   nav li a { font-size: 1.5em; }
   .abt-us li, p { font-size: 1.3em; }
+  .abt-us-titles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 }
  
 
@@ -187,6 +192,11 @@ p, li {
   .border p { padding: 0.7em;}
   nav li a { font-size: 1.1em;}
   .abt-us li, p { font-size: 1em; }
+  .abt-us-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
   }
 
 h1,h2,h3 {
@@ -311,12 +321,14 @@ h1,h2,h3 {
 
 .abt-us-titles {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
-.abt-us .founding, .abt-us .employed {
-  width: 50%;
-  text-align: center;
-  ul {
+  .abt-us .founding, .abt-us .employed {
+    text-align: center;
+  }
+.abt-us ul {
   list-style: none;
-}}
+  padding: 0;
+}
