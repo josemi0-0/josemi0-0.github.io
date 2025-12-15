@@ -197,6 +197,9 @@ p, li {
   flex-direction: column;
   justify-content: center;
 }
+  .abt-us-titles hr {
+    border: var(--background);
+  }
   }
 
 h1,h2,h3 {
