@@ -319,15 +319,10 @@ h1,h2,h3 {
   letter-spacing: 2px;
 }
 
-.abt-us-titles {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.abt-us .founding, .abt-us .employed {
+  text-align: center;
 }
 
-  .abt-us .founding, .abt-us .employed {
-    text-align: center;
-  }
 .abt-us ul {
   list-style: none;
   padding: 0;
