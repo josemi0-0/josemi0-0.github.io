@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Dream Vacation </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="home">
+        <div>
+            <h1> Dream Vacation&trade; </h1>
+            <h2> The Vacation You've Always Dreamed Of </h2>
+            <div class="button"> <a href="#destinations"> Check Your Dream Destinations </a> </div>
+        </div>
+    </header>
+
+
+    <nav>
+        <div style="display: flex; gap: 30px; text-align: center; justify-content: center; align-items: center;">
+            <span> <a href="#home"> Home </a> </span>
+            <span> <a href="#destinations"> Destinations </a> </span>
+            <span> <a href="#activities"> Activities </a> </span>
+            <span> <a href="#about"> About </a> </span>
+        </div>
+    </nav>
+
+    <main>
+
+        <section id="destinations" style="height: 200vh;">
+            <br /> <br />
+            <h2> Dream Destinations </h2>
+
+            <div class="destination-list">
+
+
+            <div class="destination-card">
+                <figure>
+                    <img src="https://images.trvl-media.com/place/178280/f15b556f-f17c-4dd2-a141-c9ded145f55c.jpg" alt="LosAngeles">
+                </figure>
+                <h3> Destination: Los Angeles </h3>
+                <p> The City of Angles, known for its entertainment industry and beautiful beaches. </p>
+            </div>
+
+
+            <div class="destination-card">
+                <figure>
+                    <img src="https://images.trvl-media.com/place/6233492/55f1feea-69af-4811-94c1-61c2f152f807.jpg" alt="Tokyo">
+                </figure>
+                <h3> Destination: Tokyo </h3>
+                <p> The bustling capital of Japan, known for its modernity, culture, and cuisine. </p>
+            </div>
+
+
+            <div class="destination-card">
+                <figure>
+                    <img src="https://images.trvl-media.com/place/178281/edbf43cf-0496-4327-900f-411c38682541.jpg" alt="Madrid">
+                </figure>
+                <h3> Destination: Madrid </h3>
+                <p> The vibrant capital of Spain, known for its rich history, art, and culture. </p>
+            </div>
+
+            <div class="destination-card">
+                <figure>
+                    <img src="https://images.trvl-media.com/place/553248621562150834/53bc8cd5-fa62-4bf1-a204-989443595db2.jpg" alt="Venice">
+                </figure>
+                <h3> Destination: Venice </h3>
+                <p> The romantic city in Italy, known for its canals, architecture, and art. </p>
+            </div>
+
+
+            </div>
+        </section>
+
+        <section id="activities" style="height: 200vh;">
+
+        </section>
+    </main>
+
+
+    <script>
+        document.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", e => {
+                e.preventDefault();
+                document
+                    .querySelector(link.getAttribute("href"))
+                    .scrollIntoView({ behavior: "smooth" });
+            });
+        });
+    </script>
+
+</html>
